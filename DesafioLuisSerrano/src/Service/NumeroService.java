@@ -18,10 +18,15 @@ public class NumeroService {
     ArrayList<Integer> numerosAzar = new ArrayList<>();
     Random random = new Random();
     NumeroRepository numeroRepository = new NumeroRepository();
+    int cantidadDeNumeros;
 
+    public void recibirCantidadDeNumeros(int cantidad){
+        cantidadDeNumeros = cantidad;
+    }
+    
     public void crearNumeroAzar(){
         limpiarLista();
-        for (int i=1; i <= appConstants.CANTIDAD_NUMEROS;i++){
+        for (int i=1; i <=cantidadDeNumeros;i++){
             int numero = random.nextInt(10);
             numerosAzar.add(numero);
             System.out.println(numero);
