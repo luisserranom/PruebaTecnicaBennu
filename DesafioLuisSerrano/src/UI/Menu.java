@@ -5,7 +5,7 @@ public class Menu {
     public void mostrarMenu(){
         System.out.println("=======================");
         System.out.println("opciones");
-        System.out.println("0: menu");
+        System.out.println("0: ingrese numeros de cantidad de numeros a crear ");
         System.out.println("1: genera nuevo archivo");
         System.out.println("2: lee archivo generado");
         System.out.println("3  ordena archivo");
