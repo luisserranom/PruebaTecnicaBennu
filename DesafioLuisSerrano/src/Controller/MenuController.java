@@ -9,8 +9,11 @@ public class MenuController {
 
         switch (numero){
             case  0:
-                System.out.println("0a");
-
+                Scanner inputcantidadDeNumeros = new Scanner(System.in);
+                int cantidadDeNumeros;
+                System.out.println("ingrese la cantidad de numeross");
+                cantidadDeNumeros = inputcantidadDeNumeros.nextInt();
+                numeroService.recibirCantidadDeNumeros(cantidadDeNumeros);
                 break;
             case  1:
                 System.out.println("usted eligio la opcion 1");
